@@ -61,10 +61,23 @@ python main.py search_image <query>
 - `<query>`：自然语言提问，如`"sunset over the sea"`。
 
 ## 5. 技术选型说明
+- **PDF 解析与图片抽取：PyMuPDF（fitz）**
+  - 用途：从 PDF 中提取文本内容
+  - 优点：速度快、对 PDF 支持成熟
 
+- **文本向量：Sentence-Transformers**
+  - 用途：对论文文本（或摘要/分段文本）生成语义向量，用于 **Text → Paper** 检索
+  - 模型：`sentence-transformers/all-MiniLM-L6-v2`（轻量、效果稳定，适合本地运行）
 
+- **跨模态向量：CLIP**
+  - 用途：将文本与图片编码到同一嵌入空间，用于 **Text → Image** 检索
+  - 模型：`openai/clip-vit-base-patch32`
 
+- **向量数据库：ChromaDB**
+  - 用途：存储向量与元数据，支持 Top-K 相似度查询
+  - 设计：论文文本与论文图片分别存入不同 collection，便于独立检索与增量更新
 
+## 6. 演示
 
 
 
