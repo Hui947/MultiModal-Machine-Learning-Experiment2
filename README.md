@@ -115,12 +115,32 @@ python main.py add_paper /root/autodl-tmp/Experiment2/papers/pending_files/CLIP-
 </p>
 
 ### (2) 批量添加论文
+执行指令：
+```bash
+python main.py organize_papers --root-dir /root/autodl-tmp/Experiment2/papers/pending_files --topics "ReID,UDA,Diffusion Model"
+```
+<p align="center">
+  <img src="./assets/img8.png" width="1000" />
+</p>
 
+此时`pending_files`文件夹中的所有 PDF 文件均已消失：
+<p align="center">
+  <img src="./assets/img9.png" width="500" />
+</p>
 
-
-
-
-
+`papers`下新增新的主题文件夹`Diffusion_Model`和`UDA`，所有 PDF 文件已根据分类被移动到相应的文件夹中（所有论文分类正确）：
+<p align="center">
+  <img src="./assets/img10.png" width="500" />
+</p>
+<p align="center">
+  <img src="./assets/img11.png" width="500" />
+</p>
+<p align="center">
+  <img src="./assets/img12.png" width="500" />
+</p>
+<p align="center">
+  <img src="./assets/img13.png" width="500" />
+</p>
 
 
 
