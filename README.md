@@ -142,6 +142,31 @@ python main.py organize_papers --root-dir /root/autodl-tmp/Experiment2/papers/pe
   <img src="./assets/img13.png" width="500" />
 </p>
 
+### (3) 语义搜索
+执行指令：
+
+```bash
+python main.py search_paper "How to use CLIP in the ReID task"
+```
+
+此时返回的 top5 相似文件如下，其中 CLIP-ReID 和 PromptSG 是两个实现了 ReID 和 CLIP 结合的方法：
+
+<p align="center">
+  <img src="./assets/img14.png" width="1000" />
+</p>
+
+执行指令：
+
+```bash
+python main.py search_paper "What is Diffusion Model"
+```
+此时返回的 top5 相似文件如下，相似度排名前三的论文都属于 `Diffusion Model` topic：
+
+<p align="center">
+  <img src="./assets/img15.png" width="1000" />
+</p>
+
+### (4) 以文搜图
 
 
 
