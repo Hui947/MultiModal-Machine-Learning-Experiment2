@@ -78,7 +78,10 @@ python main.py search_image <query>
   - 设计：论文文本与论文图片分别存入不同 collection，便于独立检索与增量更新
 
 ## 6. 演示
-
-
+### (1) 添加单篇论文
+事先在`papers/pending_files`文件夹下导入后续需要用到的论文 PDF 文件，如下图：
+<p align="center">
+  <img src="./assets/img1.png" width="500" />
+</p>
 
 
