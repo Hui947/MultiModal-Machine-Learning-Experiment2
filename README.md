@@ -80,8 +80,54 @@ python main.py search_image <query>
 ## 6. 演示
 ### (1) 添加单篇论文
 事先在`papers/pending_files`文件夹下导入后续需要用到的论文 PDF 文件，如下图：
+
 <p align="center">
   <img src="./assets/img1.png" width="500" />
 </p>
+
+在执行指令前，`papers`文件夹内容如下：（`pending_files_副本`是一个为了方便还原论文 PDF 文件的副本文件夹）
+
+<p align="center">
+  <img src="./assets/img2.png" width="500" />
+</p>
+
+执行指令：
+```bash
+python main.py add_paper /root/autodl-tmp/Experiment2/papers/pending_files/CLIP-ReID.pdf --topics "ReID,UDA,Diffusion Model"
+```
+
+<p align="center">
+  <img src="./assets/img4.png" width="1000" />
+</p>
+
+此时`pending_files`文件夹中的`CLIP-ReID.pdf`已消失：
+
+<p align="center">
+  <img src="./assets/img5.png" width="500" />
+</p>
+
+`papers`下新增新的主题文件夹`ReID`，`CLIP-ReID.pdf`文件已被移动到此处：
+<p align="center">
+  <img src="./assets/img6.png" width="500" />
+</p>
+<p align="center">
+  <img src="./assets/img7.png" width="500" />
+</p>
+
+### (2) 批量添加论文
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
