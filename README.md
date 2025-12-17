@@ -167,9 +167,20 @@ python main.py search_paper "What is Diffusion Model"
 </p>
 
 ### (4) 以文搜图
+本地图库`images`内容如下：
+<p align="center">
+  <img src="./assets/img16.png" width="500" />
+</p>
 
+执行指令：
 
-
+```bash
+python main.py search_image "a sleeping kitten with its eyes closed"
+```
+此时返回的 top5 相似图像如下，相似度排名前二的图像都属于都是睡着的猫：
+<p align="center">
+  <img src="./assets/img17.png" width="1000" />
+</p>
 
 
 
