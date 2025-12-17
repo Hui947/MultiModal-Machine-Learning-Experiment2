@@ -177,13 +177,26 @@ python main.py search_paper "What is Diffusion Model"
 ```bash
 python main.py search_image "a sleeping kitten with its eyes closed"
 ```
-此时返回的 top5 相似图像如下，相似度排名前二的图像都属于都是睡着的猫：
+
+此时返回的 top5 相似图像如下，相似度排名前二的图像都是睡着的猫：
+
 <p align="center">
   <img src="./assets/img17.png" width="1000" />
 </p>
 
+执行指令：
 
+```bash
+python main.py search_image "a cat sandwiched between two slices of bread"
+```
+此时返回的 top5 相似图像如下，相似度排名前一的图像的确是一只猫猫三明治：
 
+<p align="center">
+  <img src="./assets/img18.png" width="1000" />
+</p>
 
+<p align="center">
+  <img src="./assets/img19.png" width="200" />
+</p>
 
 
